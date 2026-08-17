@@ -1,0 +1,22 @@
+file,variable,type,description,values_or_range
+sequence_course_person.csv,id,integer,Unique synthetic person identifier,1-1000
+sequence_course_person.csv,birth_year,integer,Synthetic birth year,1990-1994
+sequence_course_person.csv,sex,categorical,Sex used in the simulation,female; male
+sequence_course_person.csv,parental_education,categorical,Highest parental education before the trajectory,low; medium; high
+sequence_course_person.csv,childhood_sep,ordinal,Childhood socioeconomic position; higher values indicate greater advantage,1 (lowest) to 5 (highest)
+sequence_course_person.csv,region,categorical,Broad synthetic region of residence at baseline,capital_region; southern_finland; western_finland; eastern_northern_finland
+sequence_course_person.csv,migration_background,binary,Synthetic migration-background indicator,0=no; 1=yes
+sequence_course_person.csv,baseline_health_18,ordinal,Self-rated health at age 18; higher is better,1 (poor) to 5 (excellent)
+sequence_course_person.csv,income_32_eur,numeric,Synthetic annual income at age 32 in euros,"Approx. 9,000-90,000"
+sequence_course_person.csv,self_rated_health_32,ordinal,Self-rated health at age 32; higher is better,1 (poor) to 5 (excellent)
+sequence_course_person.csv,mental_health_score_32,numeric,Synthetic mental-health symptom score at age 32; higher is worse,0-24
+sequence_course_person.csv,employment_status_32,categorical,Employment status at age 32,full_time; part_time; unemployed; inactive_care
+sequence_course_long.csv,id,integer,Person identifier; links to person file,1-1000
+sequence_course_long.csv,age,integer,Age defining the main sequence time axis,18-30
+sequence_course_long.csv,calendar_year,integer,Calendar year corresponding to each person-age,birth_year + age
+sequence_course_long.csv,employment_state,categorical,Employment/education state at each age,education; full_time; part_time; unemployed; inactive_care
+sequence_course_long.csv,family_state,categorical,Family state at each age,single_no_child; partnered_no_child; partnered_with_child; single_parent
+sequence_course_long.csv,housing_state,categorical,Housing state at each age,parental_home; renting; owner_occupied; other_temporary
+sequence_course_wide.csv,emp_18 ... emp_30,categorical,Employment sequence in wide format,Same coding as employment_state
+sequence_course_wide.csv,fam_18 ... fam_30,categorical,Family sequence in wide format,Same coding as family_state
+sequence_course_wide.csv,house_18 ... house_30,categorical,Housing sequence in wide format,Same coding as housing_state
