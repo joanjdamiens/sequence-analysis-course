@@ -19,12 +19,12 @@ Introduction to Sequence Analysis for Life-Course Research.
 
 ## Materials
 
-- `slides/` – lecture slides
-- `syllabus/` – detailed session notes
-- `labs/` – guided R scripts
-- `lab_sheets/` – student lab sheets
-- `data/` – synthetic teaching dataset
-- `mini_project/` – assessment and report templates
+- lecture slides
+- detailed session notes
+- guided R scripts
+- exercise sheets
+- synthetic  dataset
+- assessment and report templates
 
 ## Software
 
